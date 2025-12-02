@@ -9,7 +9,7 @@ public class PlaylistRecommender {
         if (bpms == null || bpms.isEmpty()) {
             return "Invalid bpms";
         }
-
+        
         for (Integer number : bpms) {
             avg_bpms += number;
         }

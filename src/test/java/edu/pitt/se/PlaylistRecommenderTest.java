@@ -25,7 +25,7 @@ public class PlaylistRecommenderTest {
     public void testValidTrackTitles() {
         assertTrue(PlaylistRecommender.isValidTrackTitle("Hello World"));
         assertTrue(PlaylistRecommender.isValidTrackTitle("h e l l o w o r l d"));
-        assertTrue(PlaylistRecommender.isValidTrackTitle("           a         "));
+        assertTrue(PlaylistRecommender.isValidTrackTitle("                     "));
         assertTrue(PlaylistRecommender.isValidTrackTitle("helloworld"));
         assertTrue(PlaylistRecommender.isValidTrackTitle("thistitle is thirty chars long"));
         assertTrue(PlaylistRecommender.isValidTrackTitle("a"));
