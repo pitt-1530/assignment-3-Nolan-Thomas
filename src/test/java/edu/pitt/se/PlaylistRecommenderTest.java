@@ -27,6 +27,9 @@ public class PlaylistRecommenderTest {
         assertFalse(PlaylistRecommender.isValidTrackTitle("i 5n .v)aL 1:d"));
         assertFalse(PlaylistRecommender.isValidTrackTitle("pitt. "));
         assertFalse(PlaylistRecommender.isValidTrackTitle("123"));
+        assertTrue(PlaylistRecommender.isValidTrackTitle("thistitle is thirty chars long"));
+        assertTrue(PlaylistRecommender.isValidTrackTitle("a"));
+        assertFalse(PlaylistRecommender.isValidTrackTitle(""));
         assertFalse(PlaylistRecommender.isValidTrackTitle("this is a reallyyyyyyyyyyyyyyyy long track title"));
     }
 
