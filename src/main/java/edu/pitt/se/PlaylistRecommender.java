@@ -6,7 +6,7 @@ public class PlaylistRecommender {
 
     public static String classifyEnergy(List<Integer> bpms) {
         int avg_bpms = 0;
-        if (bpms.isEmpty()) {
+        if (bpms == null || bpms.isEmpty()) {
             return "Invalid bpms";
         }
 
